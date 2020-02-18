@@ -1,4 +1,4 @@
-# rally-eventdata-track TOM TOM
+# rally-eventdata-track TOM
 
 Repository containing a Rally track for simulating event-based data use-cases. The track supports bulk indexing of auto-generated events as well as simulated Kibana queries and a range of management operations to make the track self-contained.
 
