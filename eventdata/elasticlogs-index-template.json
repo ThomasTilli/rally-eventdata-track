@@ -5,7 +5,7 @@
   "index_patterns": ["{{p_index_prefix}}*"],
   "settings": {
       "index.refresh_interval": "{{p_refresh_interval}}",
-      "index.codec": "default",
+      "index.codec": "best_compression",
       {% if (p_translog_sync != 'request') %}
       "index.translog.durability": "async",
       {% endif %}
