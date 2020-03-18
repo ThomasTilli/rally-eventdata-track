@@ -5,7 +5,7 @@
   "description": "This challenge simulates a set of Kibana queries against historical data ({{p_query_index_pattern}} indices) without any indexing taking place for a period of {{ p_query_time_period / 60 }} minutes. It assumes one of the challenges creating {{p_query_index_pattern}} indices has been run.",
   "meta": {
     "benchmark_type": "querying",
-    "target_kibana_queries_per_minute": 60
+    "target_kibana_queries_per_minute": 6
   },
   "schedule": [
     {
@@ -21,19 +21,19 @@
         "tasks": [
           {
             "operation": "relative-kibana-content_issues-dashboard_50%",
-            "target-interval": 2
+            "target-interval": 1
           },
           {
             "operation": "relative-kibana-content_issues-dashboard_75%",
-            "target-interval": 2
+            "target-interval": 1
           },
           {
             "operation": "relative-kibana-traffic-dashboard_50%",
-            "target-interval": 2
+            "target-interval": 1
           },
           {
             "operation": "relative-kibana-discover_50%",
-            "target-interval": 2
+            "target-interval": 1
           }
         ]
       }
